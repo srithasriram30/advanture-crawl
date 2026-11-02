@@ -68,3 +68,14 @@ Each entry records what was decided and why.
 - **Date:** 2026-10-24
 - **Decision:** Typos and inconsistencies in the source documents are logged here as each chapter is seeded, with how each was resolved.
 - **Reason:** Keeps seed data traceable back to the source.
+
+## Node Version
+
+- **Date:** 2026-11-02
+- **Decision:** Node version: Node 24, set in .nvmrc (used locally and by CI) and in Vercel’s project settings
+- **Reason:** Vercwl doesn't read .nvmrc; so both need to be updated.
+
+## Deployment
+
+- **Date:** 2026-11-02
+- **Decision:** Hosting: production deploys from main only; every other branch and PR gets a Vercel preview deployment.
